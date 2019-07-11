@@ -17,9 +17,9 @@
 
     <!-- LOGIN OPTIONS -->
 
-    <div class="hidden">
+    <div id="logOptions">
 
-      <button class="inline-block my-0 mx-auto bg-teal-400 w-full py-2 rounded-sm">
+      <button class="inline-block my-0 mx-auto bg-teal-400 w-full py-2 rounded-sm" onclick="myFunction()">
         <div class="flex justify-center items-center">
           <span><svg class="w-6 h-6" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><path stroke-linejoin="round" d="M3.075 7l9.938 9.938h3.975L26.925 7"></path><path d="M26.925 22.9l-7.95-7.95M3.075 22.9l7.95-7.95"></path><rect x="2.744" y="7" width="24.512" height="15.9" rx="1.25"></rect></g></svg></span>
           <p class="text-sm font-medium tracking-wider ml-2">Log in with email</p>
@@ -41,7 +41,7 @@
 
     <!-- FORM -->
 
-    <div>
+    <div id="logForm" class="hidden">
 
       <form class="text-left focus-within:placeholder-red-500">
         
@@ -75,6 +75,16 @@
   <p class="mt-8">New to LANDR?<a href="#" class="ml-1 text-teal-500 text-lg hover:underline">Sign up for free</a> </p>
 
 </div>
+
+<script>
+function myFunction() {
+   var logOptions = document.getElementById("logOptions");
+   logOptions.classList.toggle("hidden");
+   
+   var logForm = document.getElementById("logForm");
+   logForm.classList.toggle("hidden");
+}
+</script>
 
 </body>
 </html>
