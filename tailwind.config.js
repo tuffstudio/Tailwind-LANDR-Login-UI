@@ -7,8 +7,21 @@ module.exports = {
       lineHeight: {
             sub: 0.1
       }
-    }
+    },
+    customForms: theme => ({
+      default: {
+        checkbox: {
+          '&:focus': {
+            boxShadow: undefined,
+            borderColor: undefined,
+          },
+        },
+        },
+      },
+    })
   },
   variants: {},
-  plugins: []
+  plugins: [
+    require('@tailwindcss/custom-forms'),
+  ]
 }

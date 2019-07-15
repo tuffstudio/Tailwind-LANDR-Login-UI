@@ -17,7 +17,7 @@
 
     <!-- LOGIN OPTIONS -->
 
-    <div id="logOptions">
+    <div id="logOptions" class="hidden">
 
       <button class="inline-block my-0 mx-auto bg-teal-400 w-full py-2 rounded-sm" onclick="myFunction()">
         <div class="flex justify-center items-center">
@@ -41,7 +41,7 @@
 
     <!-- FORM -->
 
-    <div id="logForm" class="hidden">
+    <div id="logForm" class="">
 
       <form class="text-left focus-within:placeholder-red-500">
         
@@ -55,7 +55,12 @@
           <input class="appearance-none bg-transparent border border-gray-700 rounded-sm w-full p-3 text-sm focus:outline-none focus:border-white" type="password" name="password" placeholder="Enter your password">
         </div>
 
-        <input class="my-8" type="checkbox"><span class="text-sm ml-3">Keep me logged in</span>
+        <div class="inline-flex items-center">
+          
+          <input class="form-checkbox h-5 w-5 my-8 appearance-none bg-navy rounded-sm text-teal-500 border border-gray-700 focus:border-white" type="checkbox">
+          <span class="text-sm ml-3">Keep me logged in</span>
+
+        </div>
 
       </form>
 
